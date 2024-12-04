@@ -11,3 +11,13 @@ def test_handles_empty_input():
     result = sum_of_positive_integers(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_all_negative_numbers():
+    # Arrange
+    test_input = [-1, -2, -3, -4, -5]
+    expected = 0
+    # Act
+    result = sum_of_positive_integers(test_input)
+    # Assert
+    assert result == expected
