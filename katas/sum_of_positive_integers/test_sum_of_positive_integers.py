@@ -31,3 +31,13 @@ def test_sums_all_positive_numbers():
     result = sum_of_positive_integers(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_mixed_numbers():
+    # Arrange
+    test_input = [-1, 2, -3, 4, 5]
+    expected = 11
+    # Act
+    result = sum_of_positive_integers(test_input)
+    # Assert
+    assert result == expected
