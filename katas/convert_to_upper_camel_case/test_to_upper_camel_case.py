@@ -29,3 +29,13 @@ def test_capitalises_first_letter_given_single_word():
     result = to_upper_camel_case(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_multiple_words():
+    # Arrange
+    test_input = "hello world"
+    expected = "HelloWorld"
+    # Act
+    result = to_upper_camel_case(test_input)
+    # Assert
+    assert result == expected
