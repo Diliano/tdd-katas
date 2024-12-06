@@ -39,3 +39,13 @@ def test_handles_multiple_words():
     result = to_upper_camel_case(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_multiple_words_with_varying_spaces():
+    # Arrange
+    test_input = " multiple  spaces   "
+    expected = "MultipleSpaces"
+    # Act
+    result = to_upper_camel_case(test_input)
+    # Assert
+    assert result == expected
