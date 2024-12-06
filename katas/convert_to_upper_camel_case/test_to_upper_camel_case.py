@@ -19,3 +19,13 @@ def test_handles_input_with_only_spaces():
     result = to_upper_camel_case(test_input)
     # Assert
     assert result == expected
+
+
+def test_capitalises_first_letter_given_single_word():
+    # Arrange
+    test_input = "python"
+    expected = "Python"
+    # Act
+    result = to_upper_camel_case(test_input)
+    # Assert
+    assert result == expected
