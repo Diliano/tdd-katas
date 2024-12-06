@@ -9,3 +9,13 @@ def test_handles_empty_input():
     result = to_upper_camel_case(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_input_with_only_spaces():
+    # Arrange
+    test_input = "    "
+    expected = ""
+    # Act
+    result = to_upper_camel_case(test_input)
+    # Assert
+    assert result == expected
