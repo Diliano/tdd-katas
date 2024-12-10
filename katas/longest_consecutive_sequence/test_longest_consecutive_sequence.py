@@ -11,3 +11,13 @@ def test_handles_empty_input():
     result = longest_consecutive_sequence(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_input_with_one_num():
+    # Arrange
+    test_input = [5]
+    expected = 1
+    # Act
+    result = longest_consecutive_sequence(test_input)
+    # Assert
+    assert result == expected
