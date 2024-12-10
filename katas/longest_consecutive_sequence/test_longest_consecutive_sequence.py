@@ -21,3 +21,13 @@ def test_handles_input_with_one_num():
     result = longest_consecutive_sequence(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_input_with_no_consecutive_sequence():
+    # Arrange
+    test_input = [10, 20, 30]
+    expected = 1
+    # Act
+    result = longest_consecutive_sequence(test_input)
+    # Assert
+    assert result == expected
