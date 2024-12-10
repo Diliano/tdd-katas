@@ -3,10 +3,17 @@ def longest_consecutive_sequence(nums):
         return 0
 
     nums.sort()
-    consecutive_seq_len = 1
+    current, longest = 1, 1
 
     for i in range(1, len(nums)):
         if nums[i] == (nums[i - 1] + 1):
-            consecutive_seq_len += 1
+            current += 1
+        else:
+            if current > longest:
+                longest = current
+            current = 1
 
-    return consecutive_seq_len
+    if current > longest:
+        longest = current
+
+    return longest

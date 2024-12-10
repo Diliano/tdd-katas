@@ -49,3 +49,21 @@ def test_calculates_length_of_consecutive_sequence():
     result = longest_consecutive_sequence(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_input_with_multiple_consecutive_sequences():
+    # Arrange
+    test_input = [1, 2, 11, 9, 10, 4, 3, 20, 15]
+    expected = 4
+    # Act
+    result = longest_consecutive_sequence(test_input)
+    # Assert
+    assert result == expected
+
+    # Arrange
+    test_input = [100, 101, 102, 97, 96, 45, 44]
+    expected = 3
+    # Act
+    result = longest_consecutive_sequence(test_input)
+    # Assert
+    assert result == expected
