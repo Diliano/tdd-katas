@@ -1,0 +1,13 @@
+from katas.longest_consecutive_sequence.longest_consecutive_sequence import (
+    longest_consecutive_sequence,
+)
+
+
+def test_handles_empty_input():
+    # Arrange
+    test_input = []
+    expected = 0
+    # Act
+    result = longest_consecutive_sequence(test_input)
+    # Assert
+    assert result == expected
