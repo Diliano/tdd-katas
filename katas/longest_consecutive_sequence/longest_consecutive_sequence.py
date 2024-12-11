@@ -2,6 +2,7 @@ def longest_consecutive_sequence(nums):
     if not nums:
         return 0
 
+    nums = list(set(nums))
     nums.sort()
     current, longest = 1, 1
 

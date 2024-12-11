@@ -67,3 +67,13 @@ def test_handles_input_with_multiple_consecutive_sequences():
     result = longest_consecutive_sequence(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_input_list_duplicates():
+    # Arrange
+    test_input = [1, 2, 0, 1]
+    expected = 3
+    # Act
+    result = longest_consecutive_sequence(test_input)
+    # Assert
+    assert result == expected
