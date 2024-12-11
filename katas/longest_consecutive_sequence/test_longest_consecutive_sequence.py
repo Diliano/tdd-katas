@@ -77,3 +77,13 @@ def test_handles_input_list_duplicates():
     result = longest_consecutive_sequence(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_negative_numbers():
+    # Arrange
+    test_input = [-1, -3, 0, -2, 2, 1]
+    expected = 6
+    # Act
+    result = longest_consecutive_sequence(test_input)
+    # Assert
+    assert result == expected

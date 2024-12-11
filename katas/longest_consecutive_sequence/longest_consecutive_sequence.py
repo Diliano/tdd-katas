@@ -13,6 +13,6 @@ def longest_consecutive_sequence(nums):
             while current_num + 1 in nums:
                 current_seq += 1
                 current_num += 1
-        longest_seq = max(current_seq, longest_seq)
+            longest_seq = max(current_seq, longest_seq)
 
     return longest_seq
