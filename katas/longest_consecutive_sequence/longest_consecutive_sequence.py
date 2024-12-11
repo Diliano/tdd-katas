@@ -2,19 +2,17 @@ def longest_consecutive_sequence(nums):
     if not nums:
         return 0
 
-    nums = list(set(nums))
-    nums.sort()
-    current, longest = 1, 1
+    nums = set(nums)
 
-    for i in range(1, len(nums)):
-        if nums[i] == (nums[i - 1] + 1):
-            current += 1
-        else:
-            if current > longest:
-                longest = current
-            current = 1
+    longest_seq = 1
 
-    if current > longest:
-        longest = current
+    for num in nums:
+        if num - 1 not in nums:
+            current_num = num
+            current_seq = 1
+            while current_num + 1 in nums:
+                current_seq += 1
+                current_num += 1
+        longest_seq = max(current_seq, longest_seq)
 
-    return longest
+    return longest_seq
