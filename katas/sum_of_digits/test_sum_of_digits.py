@@ -19,3 +19,13 @@ def test_handles_single_digit_input():
     result = sum_of_digits(test_input)
     # Assert
     assert result == expected
+
+
+def test_calculates_sum_of_digits():
+    # Arrange
+    test_input = 123
+    expected = 6
+    # Act
+    result = sum_of_digits(test_input)
+    # Assert
+    assert result == expected
