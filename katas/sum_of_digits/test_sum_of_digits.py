@@ -9,3 +9,13 @@ def test_handles_input_of_zero():
     result = sum_of_digits(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_single_digit_input():
+    # Arrange
+    test_input = 5
+    expected = 5
+    # Act
+    result = sum_of_digits(test_input)
+    # Assert
+    assert result == expected
