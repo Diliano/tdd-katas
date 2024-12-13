@@ -29,3 +29,19 @@ def test_calculates_sum_of_digits():
     result = sum_of_digits(test_input)
     # Assert
     assert result == expected
+
+    # Arrange
+    test_input = 456
+    expected = 15
+    # Act
+    result = sum_of_digits(test_input)
+    # Assert
+    assert result == expected
+
+    # Arrange
+    test_input = 98765
+    expected = 35
+    # Act
+    result = sum_of_digits(test_input)
+    # Assert
+    assert result == expected
