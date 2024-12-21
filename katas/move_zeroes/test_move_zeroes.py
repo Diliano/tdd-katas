@@ -19,3 +19,13 @@ def test_handles_list_with_no_zeroes():
     result = move_zeroes(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_list_with_only_zeroes():
+    # Arrange
+    test_input = [0, 0, 0]
+    expected = [0, 0, 0]
+    # Act
+    result = move_zeroes(test_input)
+    # Assert
+    assert result == expected
