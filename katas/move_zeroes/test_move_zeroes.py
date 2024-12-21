@@ -9,3 +9,13 @@ def test_handles_empty_input():
     result = move_zeroes(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_list_with_no_zeroes():
+    # Arrange
+    test_input = [1, 2, 3]
+    expected = [1, 2, 3]
+    # Act
+    result = move_zeroes(test_input)
+    # Assert
+    assert result == expected
