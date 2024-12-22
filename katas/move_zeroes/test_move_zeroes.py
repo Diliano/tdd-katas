@@ -39,3 +39,13 @@ def test_moves_one_zero():
     result = move_zeroes(test_input)
     # Assert
     assert result == expected
+
+
+def test_moves_multiple_zeroes():
+    # Arrange
+    test_input = [0, 1, 0, 3, 12]
+    expected = [1, 3, 12, 0, 0]
+    # Act
+    result = move_zeroes(test_input)
+    # Assert
+    assert result == expected
