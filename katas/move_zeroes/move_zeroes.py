@@ -6,3 +6,12 @@ def move_zeroes(nums):
 
     if empty or no_zeroes or only_zeroes:
         return nums
+
+    length = len(nums)
+
+    for i in range(length):
+        if nums[i] == 0:
+            nums.pop(i)
+            nums.append(0)
+
+    return nums
