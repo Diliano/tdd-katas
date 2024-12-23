@@ -49,3 +49,14 @@ def test_moves_multiple_zeroes():
     result = move_zeroes(test_input)
     # Assert
     assert result == expected
+
+
+def test_modifies_input_list_in_place():
+    # Arrange
+    test_input = [0, 0, 1]
+    expected = [1, 0, 0]
+    # Act
+    result = move_zeroes(test_input)
+    # Assert
+    assert result == expected  # Check the list is correctly modified
+    assert result is test_input  # Check that the modification happens in place
