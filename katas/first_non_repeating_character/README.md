@@ -15,4 +15,4 @@ Write a function that takes a string and returns the **first non-repeating chara
 1. The input is an empty string → Return `""`.
 2. The input contains all repeating characters → Return `""`.
 3. The input is a single character → Return that character.
-
+4. The input contains no repeating characters → Return the first character.
