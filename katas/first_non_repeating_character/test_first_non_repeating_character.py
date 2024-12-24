@@ -41,3 +41,13 @@ def test_finds_first_non_repeating_character():
     result = first_non_repeating_character(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_all_repeating_characters():
+    # Arrange
+    test_input = "aabb"
+    expected = ""
+    # Act
+    result = first_non_repeating_character(test_input)
+    # Assert
+    assert result == expected
