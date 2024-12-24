@@ -11,3 +11,13 @@ def test_handles_empty_input():
     result = first_non_repeating_character(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_single_character_input():
+    # Arrange
+    test_input = "c"
+    expected = "c"
+    # Act
+    result = first_non_repeating_character(test_input)
+    # Assert
+    assert result == expected
