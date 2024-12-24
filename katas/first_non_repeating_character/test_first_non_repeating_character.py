@@ -21,3 +21,13 @@ def test_handles_single_character_input():
     result = first_non_repeating_character(test_input)
     # Assert
     assert result == expected
+
+
+def test_finds_non_repeating_character():
+    # Arrange
+    test_input = "racecar"
+    expected = "e"
+    # Act
+    result = first_non_repeating_character(test_input)
+    # Assert
+    assert result == expected
