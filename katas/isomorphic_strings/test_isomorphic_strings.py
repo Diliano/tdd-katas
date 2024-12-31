@@ -19,3 +19,13 @@ def test_handles_strings_of_different_lengths():
     result = is_isomorphic(*test_input)
     # Assert
     assert result is expected
+
+
+def test_identifies_isomorphic_strings():
+    # Arrange
+    test_input = ("egg", "add")
+    expected = True
+    # Act
+    result = is_isomorphic(*test_input)
+    # Assert
+    assert result is expected
