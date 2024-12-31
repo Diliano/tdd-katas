@@ -9,6 +9,10 @@ def is_isomorphic(s1, s2):
 
     for i in range(len(s1)):
         if s1[i] != s2[i]:
+            if s1[i] in mappings and mappings[s1[i]] != s2[i]:
+                return False
+            if s2[i] in mappings and mappings[s2[i]] != s1[i]:
+                return False
             mappings[s1[i]] = s2[i]
 
     return True

@@ -29,3 +29,13 @@ def test_identifies_isomorphic_strings():
     result = is_isomorphic(*test_input)
     # Assert
     assert result is expected
+
+
+def test_identifies_non_isomorphic_strings():
+    # Arrange
+    test_input = ("foo", "bar")
+    expected = False
+    # Act
+    result = is_isomorphic(*test_input)
+    # Assert
+    assert result is expected
