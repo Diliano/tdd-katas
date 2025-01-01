@@ -47,3 +47,11 @@ def test_identifies_non_isomorphic_strings():
     result = is_isomorphic(*test_input)
     # Assert
     assert result is expected
+
+    # Arrange
+    test_input = ("ab", "aa")
+    expected = False
+    # Act
+    result = is_isomorphic(*test_input)
+    # Assert
+    assert result is expected
