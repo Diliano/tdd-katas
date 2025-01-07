@@ -1,6 +1,6 @@
 def longest_common_prefix(strs):
     if not strs:
-        return []
+        return ""
 
     if len(strs) == 1:
         return strs[0]

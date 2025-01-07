@@ -4,7 +4,7 @@ from katas.longest_common_prefix.longest_common_prefix import longest_common_pre
 def test_handles_empty_input():
     # Arrange
     test_input = []
-    expected = []
+    expected = ""
     # Act
     result = longest_common_prefix(test_input)
     # Assert
