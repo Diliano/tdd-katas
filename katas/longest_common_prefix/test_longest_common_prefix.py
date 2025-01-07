@@ -30,6 +30,22 @@ def test_finds_longest_common_prefix():
     # Assert
     assert result == expected
 
+    # Arrange
+    test_input = ["interview", "internet", "internal"]
+    expected = "inter"
+    # Act
+    result = longest_common_prefix(test_input)
+    # Assert
+    assert result == expected
+
+    # Arrange
+    test_input = ["apple", "ape", "april"]
+    expected = "ap"
+    # Act
+    result = longest_common_prefix(test_input)
+    # Assert
+    assert result == expected
+
 
 def test_handles_input_with_no_common_prefix():
     # Arrange
