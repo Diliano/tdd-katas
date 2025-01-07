@@ -9,3 +9,13 @@ def test_handles_empty_input():
     result = longest_common_prefix(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_only_one_input_str():
+    # Arrange
+    test_input = ["hello"]
+    expected = "hello"
+    # Act
+    result = longest_common_prefix(test_input)
+    # Assert
+    assert result == expected
