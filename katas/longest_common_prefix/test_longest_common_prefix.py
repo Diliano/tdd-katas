@@ -19,3 +19,13 @@ def test_handles_only_one_input_str():
     result = longest_common_prefix(test_input)
     # Assert
     assert result == expected
+
+
+def test_finds_longest_common_prefix():
+    # Arrange
+    test_input = ["flower", "flow", "flight"]
+    expected = "fl"
+    # Act
+    result = longest_common_prefix(test_input)
+    # Assert
+    assert result == expected
