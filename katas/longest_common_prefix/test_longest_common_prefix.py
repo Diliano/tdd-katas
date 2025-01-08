@@ -55,3 +55,13 @@ def test_handles_input_with_no_common_prefix():
     result = longest_common_prefix(test_input)
     # Assert
     assert result == expected
+
+
+def test_handles_input_with_one_empty_string():
+    # Arrange
+    test_input = ["hello", "", "there"]
+    expected = ""
+    # Act
+    result = longest_common_prefix(test_input)
+    # Assert
+    assert result == expected
